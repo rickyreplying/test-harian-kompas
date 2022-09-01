@@ -19,7 +19,7 @@
                     </div>
                 </li>
                 <li class="font-bold text-right">
-                    Total : {{totalOrders()}}
+                    Total : {{totalPerHari()}}
                 </li>
             </ul>
         </div>
@@ -41,7 +41,7 @@
         },
         methods: {
        
-            totalOrders: function (values) {
+            totalPerHari: function (values) {
                 this.data = this.detail.keterangan;
                 console.log(this.data)
                 

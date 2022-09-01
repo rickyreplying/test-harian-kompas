@@ -30,28 +30,28 @@
               </label>
               <input v-model="form.nama"
                 class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="nama"
-                type="text">
+                type="text" required>
 
               <label class="block text-gray-700 text-sm font-bold mb-2" for="harga">
                 Harga
               </label>
               <input v-model="form.pengeluaraan"
                 class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="pengeluaraan"
-                type="number">
+                type="number" required>
 
               <label class="block text-gray-700 text-sm font-bold mb-2" for="jam">
                 Jam
               </label>
               <input v-model="form.jam"
                 class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="jam"
-                type="time">
+                type="time" required>
 
               <label class="block text-gray-700 text-sm font-bold mb-2" for="jam">
                 Tanggal
               </label>
               <input v-model="form.tanggal"
                 class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight" id="tanggal"
-                type="text">
+                type="text" required>
 
 
               <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">

@@ -18,7 +18,9 @@
                         </div>
                     </div>
                 </li>
-
+                <li class="font-bold text-right">
+                    Total : {{totalOrders()}}
+                </li>
             </ul>
         </div>
     </div>
@@ -33,17 +35,26 @@
         props: ["detail"],
         data() {
             return {
-                total: ""
-                
+                total: "",
+                data: "",
             }
         },
-        
         methods: {
-            // hitungTotal() {
-            //     return console.log(detail);
-            // },
+       
+            totalOrders: function (values) {
+                this.data = this.detail.keterangan;
+                console.log(this.data)
+                
+                let total = this.data.reduce(function(prev, cur) {
+                    return prev + cur.pengeluaraan;
+                }, 0)
+
+                console.log(total);
+                return total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+             
+            },
+
         },
     }
-
-    
 </script>

@@ -8,5 +8,5 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 
 ### Yang belum sempat diimplementasikan :
-## Menggunakan Tipe Input Date serta mengkonversikan menjadi Format String
-## Menampilkan data berdasarkan urutan tanggal terbaru
+#### Menggunakan Tipe Input Date serta mengkonversikan menjadi Format String
+#### Menampilkan data berdasarkan urutan tanggal terbaru
